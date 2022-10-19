@@ -1,0 +1,228 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+/*@import './base.css';*/
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+body{
+    background-color: #FFFFFF;
+    color: #292D33;
+}
+
+
+/*============================| Headline |===========================*/
+.headline_1_ExtraBold{
+    /*font-family: Manrope, serif;*/
+    font-size: 46px;
+    font-weight: 800;
+    line-height: 60px;
+    letter-spacing: -0.015em;
+}
+
+.headline_2_ExtraBold{
+    /*font-family: Manrope, serif;*/
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 56px;
+    letter-spacing: -0.015em;
+}
+
+.headline_3_ExtraBold{
+    /*font-family: 'Manrope', sans-serif;*/
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: -0.015em;
+}
+
+.headline_4_Bold{
+    /*font-family: 'Manrope';*/
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: -0.015em;
+}
+
+.headline_5_Bold{
+    /*font-family: Manrope;*/
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.015em;
+    text-align: left;
+}
+
+.headline_6_Bold{
+    /*font-family: Manrope, serif;*/
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+}
+
+.headline_7_SemiBold{
+    /*font-family: Manrope, serif;*/
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+}
+
+.headline_7_Medium{
+    font-family: Manrope, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+}
+.headline_8_SemiBold{
+    /*font-family: 'Open Sans';*/
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+}
+
+.typography{
+    /*font-size: 26px;*/
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: -0.015em;
+}
+
+/*============================| Paragraph |===========================*/
+.paragraph_1_Regular{
+    /*font-family: 'Open Sans', serif;*/
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: -0.015em;
+}
+.paragraph_2_Regular{
+    /*font-family: 'Open Sans', serif;*/
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.paragraph_3_Regular{
+    /*font-family: Open Sans;*/
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+}
+
+.paragraph_3_SemiBold{
+    /*font-family: Open Sans;*/
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+}
+
+
+
+
+
+
+
+.benefitPosition:nth-child(1){
+    margin-top: -56px;
+}
+
+.benefitPosition:nth-child(2),
+.benefitPosition:nth-child(4){
+    margin-top: 30px;
+}
+.lastBlockFontWeight div:last-child div div .typography{
+    font-weight: 700;
+}
+
+.peer:checked ~ label span img{
+    transform: rotate(180deg);
+}
+.countMobile{
+    /*font-family: 'Open Sans';*/
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 70px;
+    letter-spacing: -0.025em;
+}
+
+/************************| infinite slider images|*****************************************/
+
+
+
+
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-92px * 14))}
+}
+
+
+.slider {
+    overflow: hidden;
+}
+.slider::before,
+.slider::after {
+     /*content: "";*/
+     /*height: auto;*/
+     /*position: absolute;*/
+     /*z-index: 2;*/
+ }
+
+.slider::after {
+     /*right: 0;*/
+     /*top: 0;*/
+     /*transform: rotateZ(180deg);*/
+ }
+
+.slider::before {
+    /*left: 0;*/
+    /*top: 0;*/
+}
+.slide-track{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.slide{
+    width: 185px;
+    height: 132px;
+}
+
+@media only screen and (max-width: 360px){
+    .slide-track {
+        animation: scroll 50s linear infinite;
+        display: flex;
+        width: calc(92px * 18);
+    }
+    .slide{
+        width: 92px;
+        height: 65px;
+    }
+}
+
+
+
+
+/****************| FAQs |******************/
+
+
+details > summary,
+details[open] > summary {
+    list-style-type: none;
+}
+
+details[open] > summary {
+    margin-bottom: 15px;
+}
