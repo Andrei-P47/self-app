@@ -45,7 +45,7 @@ const OurBlogBlock: NextPage = () => {
                             </ButtonNext>
                         </div>
                     </div>
-                    <div className="w-full relative  items-center justify-center">
+                    <div className="w-full relative items-center justify-center">
                         <Slider>
                             <div id="slider" className="h-full xs:h-[482px] flex flex-col xs:flex-row items-start gap-[20px] xs:gap-[20px] transition ease-out duration-700">
                                 {TestimonialsCards.map(({ id,icon,date, title, description}, index) => {
