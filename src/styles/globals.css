@@ -38,7 +38,7 @@ body{
 }
 
 .headline_4_Bold{
-    /*font-family: 'Manrope';*/
+    /*font-family: 'Manrope', serif;*/
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
@@ -225,4 +225,12 @@ details[open] > summary {
 
 details[open] > summary {
     margin-bottom: 15px;
+}
+
+
+/******************************/
+
+
+.controlBlock > button:disabled svg path{
+    fill: #C9DCEC;
 }
