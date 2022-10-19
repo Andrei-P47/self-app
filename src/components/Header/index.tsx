@@ -5,7 +5,8 @@ import Link from "next/link";
 import { useRouter } from 'next/router';
 
 import {useMediaQuery} from "../useMediaQuery";
-import {MobileMenuItems,Icons} from "../../constants/header.constants";
+import {MobileMenuItems, Icons} from "../../constants/header.constants";
+
 
 const Header: NextPage = () => {
 
@@ -121,7 +122,8 @@ const Header: NextPage = () => {
                                             <div className="flex flex-row gap-3">
                                                 {Icons.map(({icon}, index) => {
                                                     return (
-                                                        <>{icon}</>
+                                                        <div dangerouslySetInnerHTML={{ __html: icon }}>
+                                                        </div>
                                                     )})}
                                             </div>
                                         </div>
