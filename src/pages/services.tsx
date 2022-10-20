@@ -11,7 +11,7 @@ import {
     OurBlogBlock,
     ContactUsSection,
     SubscribeSection,
-    Footer
+    Footer, Breadcrumbs, Hero, SolutionsCards
 
 } from '../components';
 
@@ -19,15 +19,11 @@ const Services = () => {
     return (
         <div>
             <Header />
-            {/*<FirstBlock/>*/}
-            {/*<FeatureSection/>*/}
-            {/*<CompanyOverview/>*/}
-            {/*<BenefitsBlock/>*/}
-            {/*<TestimonialsBlock/>*/}
-            {/*<OurPricingBlock/>*/}
-            {/*<OurBlogBlock/>*/}
-            {/*<ContactUsSection/>*/}
-            {/*<SubscribeSection/>*/}
+            <Breadcrumbs/>
+            <Hero/>
+            <SolutionsCards/>
+            <ContactUsSection/>
+            <SubscribeSection/>
             <Footer/>
         </div>
     );

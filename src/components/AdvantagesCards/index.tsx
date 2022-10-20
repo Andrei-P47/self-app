@@ -26,7 +26,6 @@ const AdvantagesCards: NextPage = () => {
                     return (
                         <div className="flex flex-col items-center py-[30px] xs:py-[46px] px-[25px] xs:px-[35px] gap-[20px] xs:gap-[30px] bg-white shadow-card-3 rounded-md" key={index}>
                             <div className="flex flex-row items-center p-[10px] xs:p-[14px] gap-[10px] border border-background rounded-xl">
-                                {/*{enums.icon?}*/}
                                 <Image
                                     src={enums.icon}
                                     alt={'Advantages icons'}

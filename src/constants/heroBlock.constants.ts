@@ -55,4 +55,12 @@ export const HeroBlock = [
             `Sed ut perspiciatis unde omnis iste natus error sit<br /> voluptatem accusantium doloremque laudantium totam.`
         ]
     },
+    {
+        urls: '/services',
+        titlePage: 'services',
+        titleDescription: [
+            'Data Analytics Services',
+            `Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quaeab illo inventore.`
+        ]
+    },
 ]
