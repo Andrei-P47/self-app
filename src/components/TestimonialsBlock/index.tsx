@@ -15,13 +15,13 @@ const TestimonialsBlock: NextPage = () => {
     const isBreakpoint = useMediaQuery(360)
 
     return (
-        <div className="container px-4 xs:px-0 xs:mx-auto w-[360px] xs:w-[1110px] my-[50px] xs:my-[120px]">
+        <div className="container px-4 xs:px-0 xs:mx-auto w-[360px] xs:w-[1110px] mt-[50px] xs:mt-[120px]">
 
             <CarouselProvider
                 naturalSlideWidth={100}
                 naturalSlideHeight={125}
                 totalSlides={9}
-                visibleSlides={isBreakpoint ? 1 : 3}
+                visibleSlides={isBreakpoint ? 1 : router.asPath == '/about' ? 2 : 3}
             >
 
                 <div className="flex justify-between items-stretch">
@@ -73,14 +73,14 @@ const TestimonialsBlock: NextPage = () => {
                 <Slider id="slider">
                     <div className={` gap-[30px]  first:pl-[10px]
                     ${
-                        router.asPath == '/about' ? 'grid grid-cols-1 xs:grid-cols-2 pt-[50px]': 'flex flex-row pt-[50px]'
+                        router.asPath == '/about' ? 'flex flex-row pt-[50px]': 'flex flex-row pt-[50px]'
                     }
                     `}>
 
 
                         {TestimonialsCards.map(({ id,icon,name,job,description}, index) => {
                         // if(isBreakpoint ?  index < 1 : index < TestimonialsCards.length) {
-                            if(router.asPath == '/about' ? index < 2 : index < TestimonialsCards.length){
+                        //     if(router.asPath == '/about' ? index < 2 : index < TestimonialsCards.length){
                                 return (
                                     <Slide index={id} key={index}>
                                     <div className="flex flex-col xs:min-h-[371px] items-start p-[35px] gap-[25px] bg-white shadow-card-3">
@@ -106,7 +106,8 @@ const TestimonialsBlock: NextPage = () => {
                                 )
                             // }
 
-                        }})}
+                        // }
+                        })}
 
 
 
